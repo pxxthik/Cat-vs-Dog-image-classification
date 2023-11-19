@@ -20,6 +20,8 @@ st.write("Upload an image to predict whether it's a Dog or a Cat!")
 
 uploaded_file = st.file_uploader("Choose an image...", type=['jpg', 'jpeg', 'png'])
 
+st.warning("Please ensure that you are submitting only dog or cat images. Images containing other animals, objects, or irrelevant content may compromise the accuracy of the classification model.")
+
 if st.button("Predict"):
 
     if uploaded_file is not None:
